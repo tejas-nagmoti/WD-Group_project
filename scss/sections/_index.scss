@@ -1,6 +1,33 @@
-.wrap-grid {
+/* =============
+    Index
+============= */
+.container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 100
-  padding: 10px
+  grid-template-columns: auto auto; /* Automatically adjusts column width */
+  justify-content: center; /* Centers the grid items horizontally */
+  gap: 20px; /* Adds some spacing between content items */
 }
+.content {
+  /* Your individual content CSS rules can go here */
+  /* For example: */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.page-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Makes sure the content takes up the full viewport height */
+}
+
+.image-container {
+  display: flex;
+  
+}
+
+.image-container img {
+  max-width: 100%;
+  margin: 0 20px;
+  
+}
+

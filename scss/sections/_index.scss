@@ -1,19 +1,6 @@
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .sticky-heading {
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    position: sticky;
-    top: 0; /* Stick to the top of the viewport */
-    z-index: 100; /* Ensure the heading is above other content */
-  }
-  
-  .content {
-    padding: 20px;
-  }
+.wrap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100
+  padding: 10px
+}

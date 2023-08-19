@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sticky-heading {
+    background-color: royalblue;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+  }
+  
+  .content {
+    padding: 10px;
+  }
+
+  .wrap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100
+    padding: 10px
+  }
+
+  

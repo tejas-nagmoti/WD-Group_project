@@ -370,6 +370,26 @@ a {
   text-decoration: none;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
+  grid-gap: 20px; /* Adds spacing between grid items */
+  margin: 30px;
+}
+
+.grid-item {
+  background-color: teal;
+  padding: 50px;
+  margin: 50px;
+  border: 30px;
+}
+
+.colored-text {
+  color: white;
+}
+
 .container {
   text-align: center;
   width: 100%;

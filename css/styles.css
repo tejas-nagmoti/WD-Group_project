@@ -366,11 +366,32 @@ textarea {
 /* =============
     Footer
 ============= */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sticky-heading {
+  background-color: royalblue;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.content {
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
 }
 
-.grid-container {
+.grid-container1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -378,6 +399,38 @@ a {
   grid-gap: 20px; /* Adds spacing between grid items */
   margin: 30px;
   border: 30px;
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px; /* Adds spacing around the content */
+  margin: 30px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+}
+
+.page-wrapper1 {
+  background-color: #5a175d; /* Example background color */
+  padding: 40px; /* Adds spacing within each page-wrapper */
+  -ms-flex-preferred-size: 58%;
+      flex-basis: 58%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.center-aligned {
+  text-align: center;
+}
+
+.text-align {
+  text-align: left;
 }
 
 .grid-container {
@@ -390,7 +443,7 @@ a {
 }
 
 .grid-item {
-  background-color: teal;
+  background-color: #151667;
   padding: 50px;
   margin: 50px;
   border: 30px;
@@ -437,7 +490,7 @@ a {
 }
 
 .page-wrapper {
-  background-color: orange; /* Example background color */
+  background-color: #370031; /* Example background color */
   padding: 20px; /* Adds spacing within each page-wrapper */
   -ms-flex-preferred-size: 58%;
       flex-basis: 58%;

@@ -1,13 +1,57 @@
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sticky-heading {
+    background-color: royalblue;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+  }
+  
+  .content {
+    padding: 10px;
+  }
+
 a {
     text-decoration: none;
 }
 
   
-.grid-container {
+.grid-container1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
     grid-gap: 20px; /* Adds spacing between grid items */
     margin: 30px;
     border: 30px;
-    
+  }
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Adds spacing around the content */
+    margin: 30px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+  }
+  .page-wrapper1 {
+    background-color: #5a175d; /* Example background color */
+    padding: 40px; /* Adds spacing within each page-wrapper */
+    flex-basis: 58%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  .center-aligned {
+    text-align: center;
+  }
+  
+  .text-align {
+    text-align: left;
   }

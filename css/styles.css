@@ -391,16 +391,6 @@ a {
   text-decoration: none;
 }
 
-.grid-container1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
-  grid-gap: 20px; /* Adds spacing between grid items */
-  margin: 30px;
-  border: 30px;
-}
-
 .container1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,19 +398,25 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px; /* Adds spacing around the content */
-  margin: 30px;
+  padding: 30px; /* Adds spacing around the content */
+  margin: 20px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
+  height: 100vh;
 }
 
 .page-wrapper1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #5a175d; /* Example background color */
-  padding: 40px; /* Adds spacing within each page-wrapper */
+  padding: 50px; /* Adds spacing within each page-wrapper */
   -ms-flex-preferred-size: 58%;
       flex-basis: 58%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; /* Include padding in the width calculation */
 }

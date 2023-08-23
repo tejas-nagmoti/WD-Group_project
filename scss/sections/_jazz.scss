@@ -1,0 +1,21 @@
+.page-wrapper {
+    background-color: #370031; /* Example background color */
+    padding: 20px; /* Adds spacing within each page-wrapper */
+    flex-basis: 58%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
+    grid-gap: 20px; /* Adds spacing between grid items */
+    margin: 30px;
+    
+  }
+  .grid-item {
+    background-color: #370031 ;
+    padding: 50px;
+    margin: 50px;
+    border: 30px;
+    
+  }

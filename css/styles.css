@@ -470,9 +470,13 @@ h2 {
 
 .grid-header {
   color: black;
-  background-color: red;
+  background-color: #cc0000;
   padding: 40px;
   border-bottom: 5px;
+}
+
+.background-color {
+  background-color: lightgrey;
 }
 
 .grid-container {
@@ -505,37 +509,20 @@ h2 {
 
 .grid-footer {
   color: black;
-  background-color: red;
+  background-color: #cc0000;
   padding: 20px;
   border-top: 5px solid white;
 }
 
 .grid-header {
   color: black;
-  background-color: red;
+  background-color: #681813;
   padding: 40px;
   border-bottom: 5px;
 }
 
-.container {
-  text-align: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-.sticky-heading {
-  background-color: lavender;
-  padding: 10px;
-  border-bottom: 2px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.content {
-  padding: 10px;
+.background-color {
+  background-color: lightgrey;
 }
 
 .container {
@@ -583,8 +570,22 @@ h2 {
   color: black;
 }
 
-footer {
+.grid-footer {
   color: black;
+  background-color: #cc0000;
+  padding: 20px;
+  border-top: 5px lightgrey;
+}
+
+.grid-header {
+  color: black;
+  background-color: #cc0000;
+  padding: 40px;
+  border-bottom: 5px;
+}
+
+.background-color {
+  background-color: lightgrey;
 }
 
 /* =============

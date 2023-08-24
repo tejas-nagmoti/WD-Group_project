@@ -8,14 +8,14 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
-    grid-gap: 20px; /* Adds spacing between grid items */
-    margin: 30px;
+    grid-gap: 50px; /* Adds spacing between grid items */
+    margin: 40px;
     
   }
   .grid-item {
     background-color: #370031 ;
-    padding: 50px;
-    margin: 50px;
-    border: 30px;
+    padding: 20px;
+    margin: 40px;
+    border: 20px;
     
   }

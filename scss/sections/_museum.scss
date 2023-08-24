@@ -16,3 +16,25 @@
 .colored-text {
     color: white;
 }
+
+@font-face {
+  font-family: 'TiltPrism';
+  src: url('https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf') format('truetype');
+}
+.custom-heading {
+  font-family: 'Tilt Prism', sans-serif;
+}
+
+.grid-footer {
+  color: black;
+  background-color: red;
+  padding: 20px;
+  border-top: 5px solid white;
+}
+
+.grid-header {
+  color: black;
+  background-color: red;
+  padding: 40px;
+  border-bottom: 5px;
+}

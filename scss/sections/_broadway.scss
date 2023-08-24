@@ -1,56 +1,104 @@
 .container {
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .sticky-heading {
-    background-color: royalblue;
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
-    position: sticky;
-    top: 0; 
-    z-index: 100; 
-  }
-  
-  .content {
-    padding: 10px;
-  }
-
-a {
-    text-decoration: none;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-  
+.sticky-heading {
+  background-color: royalblue;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  .container1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px; /* Adds spacing around the content */
-    margin: 20px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-  }
-  .page-wrapper1 {
-    display: flex;
-    background-color: #5a175d; /* Example background color */
-    padding: 50px; /* Adds spacing within each page-wrapper */
-    flex-basis: 58%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box; /* Include padding in the width calculation */
-    
-  }
-  
-  .center-aligned {
-    text-align: center;
-  }
-  
-  .text-align {
-    text-align: left;
-  }
+.content {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  /* Adds spacing around the content */
+  margin: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.page-wrapper1 {
+  display: flex;
+  background-color: #5a175d;
+  /* Example background color */
+  padding: 50px;
+  /* Adds spacing within each page-wrapper */
+  flex-basis: 58%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  /* Include padding in the width calculation */
+
+}
+
+.center-aligned {
+  text-align: center;
+}
+
+.text-align {
+  text-align: left;
+}
+
+body {
+  color: white;
+}
+h1 {
+  color: black;
+}
+h2 {
+  color: black;
+}
+
+@font-face {
+  font-family: 'TiltPrism';
+  src: url('https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf') format('truetype');
+}
+
+.custom-heading {
+  font-family: 'Tilt Prism', sans-serif;
+}
+
+@font-face {
+  font-family: 'Roboto'; 
+    src: url('https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2') format('truetype');
+}
+
+
+.custom-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-footer {
+  color: black;
+  background-color: red;
+  padding: 20px;
+  border-top: 5px solid white;
+}
+
+.grid-header {
+  color: black;
+  background-color: red;
+  padding: 40px;
+  border-bottom: 5px;
+}

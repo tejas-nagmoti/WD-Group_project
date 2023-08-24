@@ -3,11 +3,11 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
   }
   
   .sticky-heading {
-    background-color: royalblue;
+    background-color: lavender;
     padding: 10px;
     border-bottom: 2px solid #ccc;
     position: sticky;
@@ -45,4 +45,19 @@
 
 .text-align {
   text-align: left;
+}
+
+@font-face {
+  font-family: 'TiltPrism';
+  src: url('https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf') format('truetype');
+}
+.custom-heading {
+  font-family: 'Tilt Prism', sans-serif;
+  font-size: 40px;
+}
+.season {
+  color: black;
+}
+footer {
+  color: black;
 }

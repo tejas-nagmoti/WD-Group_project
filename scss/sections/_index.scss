@@ -30,4 +30,15 @@
   margin: 0 20px;
   
 }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
 

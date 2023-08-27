@@ -9,10 +9,45 @@
             max-width: 100%;
             height: auto;
         }
+        
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #af2929;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #af2929;
+        }
     </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#theaters">Theaters</a>
+        <a href="#concerts">Concerts</a>
+        <a href="#opera">Opera</a>
+    </div>
+
     <h1>For the Love of Arts Philly</h1>
 
     <h2>Theaters</h2>
@@ -121,6 +156,9 @@
         <a href="http://www.towertheatre.net"><button>Explore events-and-tickets</button></a></p>
     </div>
 
+    <div class="footer">
+        <p>&copy; For the Love of Art Philly 2023 All rights reserved.</p>
+    </div>
    <script src="js/scripts-dist.js"></script>
 </body>
 </html>

@@ -626,6 +626,28 @@ h {
   color: #370031;
 }
 
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: slategray;
+}
+
+.navbar-list li {
+  display: inline-block;
+}
+
+.navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-list li a:hover {
+  background-color: pink;
+}
+
 /* =============
     Index
 ============= */

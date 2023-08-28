@@ -30,11 +30,11 @@ a {
   justify-content: space-between;
   padding: 30px;
   /* Adds spacing around the content */
-  margin: 20px;
+  margin: 10px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  height: 120vh;
 }
 
 .page-wrapper1 {
@@ -48,7 +48,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  /* Include padding in the width calculation */
+  margin: 30px;
 
 }
 
@@ -105,4 +105,10 @@ h {
 
 .background-color {
   background-color: lightgrey;
+}
+
+.grid-item1 {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px;
 }

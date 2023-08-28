@@ -2,6 +2,9 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
+@import "section/index.css";
+@import "section/visual-arts.css";
+@import "section/performing-arts.css";
 html {
   font-size: 100%;
 }
@@ -13,6 +16,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --teal: #008080;
+  --ruby: #800000;
+  --emerald: #049306;
+  --lightgray: #E9E9E9;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,6 +341,16 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+#title {
+  font-family: "Tilt Prism", cursive;
+}
+
 /* =============
     Buttons
 ============= */

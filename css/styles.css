@@ -354,6 +354,12 @@ body {
   text-decoration: none;
 }
 
+#navigation {
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
@@ -384,6 +390,13 @@ textarea {
 /* =============
     Navigation
 ============= */
+#navigation {
+  display: block;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 /* =============
     Header
 ============= */

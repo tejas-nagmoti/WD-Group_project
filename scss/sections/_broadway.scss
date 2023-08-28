@@ -63,10 +63,10 @@ a {
 body {
   color: white;
 }
-h1 {
+#black-text {
   color: black;
 }
-h2 {
+h {
   color: black;
 }
 
@@ -93,7 +93,7 @@ h2 {
   color: black;
   background-color: red;
   padding: 20px;
-  border-top: 5px solid white;
+  border-top: 5px lightgrey;
 }
 
 .grid-header {

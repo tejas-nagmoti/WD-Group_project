@@ -437,11 +437,11 @@ body {
   color: white;
 }
 
-h1 {
+#black-text {
   color: black;
 }
 
-h2 {
+h {
   color: black;
 }
 
@@ -465,7 +465,7 @@ h2 {
   color: black;
   background-color: red;
   padding: 20px;
-  border-top: 5px solid white;
+  border-top: 5px lightgrey;
 }
 
 .grid-header {
@@ -495,6 +495,10 @@ h2 {
   border: 30px;
 }
 
+.grid-item:first -child {
+  backrgound-color: #5a175d;
+}
+
 .colored-text {
   color: white;
 }
@@ -511,7 +515,7 @@ h2 {
   color: black;
   background-color: #cc0000;
   padding: 20px;
-  border-top: 5px solid white;
+  border-top: 5px lightgrey;
 }
 
 .grid-header {
@@ -586,6 +590,14 @@ h2 {
 
 .background-color {
   background-color: lightgrey;
+}
+
+#wite-text {
+  color: white;
+}
+
+.color {
+  color: #370031;
 }
 
 /* =============

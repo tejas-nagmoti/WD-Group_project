@@ -354,6 +354,12 @@ body {
   text-decoration: none;
 }
 
+#page-title {
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+
 #navigation {
   font-family: "Tilt Prism", cursive;
   color: white;
@@ -403,6 +409,10 @@ textarea {
 header {
   text-align: center;
   background-color: var(--ruby);
+  display: block;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 /* =============

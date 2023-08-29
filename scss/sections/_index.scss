@@ -1,0 +1,21 @@
+/* Global styles */
+body {
+    font-family: 'Tilt Prism', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #4c2a85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+}

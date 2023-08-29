@@ -6,14 +6,7 @@
   padding: 20px;
 }
 
-.sticky-heading {
-  background-color: royalblue;
-  padding: 10px;
-  border-bottom: 2px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+
 
 .content {
   padding: 10px;
@@ -29,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  /* Adds spacing around the content */
+  
   margin: 10px;
   margin-bottom: auto;
   margin-left: auto;
@@ -40,9 +33,9 @@ a {
 .page-wrapper1 {
   display: flex;
   background-color: #5a175d;
-  /* Example background color */
+  
   padding: 50px;
-  /* Adds spacing within each page-wrapper */
+ 
   flex-basis: 58%;
   margin-bottom: auto;
   margin-left: auto;
@@ -113,3 +106,25 @@ h {
   margin: 10px;
 }
 @media (max-width: 768px) 
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:red;
+}
+
+.navbar-list li {
+  display: inline-block; 
+}
+
+
+.navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-list li a:hover {
+  background-color: pink;
+}

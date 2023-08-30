@@ -1,44 +1,8 @@
 /* =============
     Index
 ============= */
-.container {
-  display: grid;
-  grid-template-columns: auto auto; /* Automatically adjusts column width */
-  justify-content: center; /* Centers the grid items horizontally */
-  gap: 20px; /* Adds some spacing between content items */
-}
-.content {
-  /* Your individual content CSS rules can go here */
-  /* For example: */
-  padding: 10px;
-  background-color: #f0f0f0;
-}
-.page-wrapper {
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  height: 100vh; /* Makes sure the content takes up the full viewport height */
-}
-
-.image-container {
-  display: flex;
+.body{
   
-}
-
-.image-container img {
-  max-width: 100%;
-  margin: 0 20px;
-  
-}
-.grid-container {
-  display: grid;
-  grid-template-areas:
-      "header header"
-      "main main"
-      "footer footer";
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
 }
 
 

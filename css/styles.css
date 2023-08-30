@@ -374,15 +374,6 @@ textarea {
   padding: 20px;
 }
 
-.sticky-heading {
-  background-color: royalblue;
-  padding: 10px;
-  border-bottom: 2px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
 .content {
   padding: 10px;
 }
@@ -399,7 +390,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px;
-  /* Adds spacing around the content */
   margin: 10px;
   margin-bottom: auto;
   margin-left: auto;
@@ -412,9 +402,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: #5a175d;
-  /* Example background color */
   padding: 50px;
-  /* Adds spacing within each page-wrapper */
   -ms-flex-preferred-size: 58%;
       flex-basis: 58%;
   margin-bottom: auto;
@@ -435,13 +423,10 @@ a {
 
 body {
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 #black-text {
-  color: black;
-}
-
-h {
   color: black;
 }
 
@@ -453,25 +438,17 @@ h {
   font-family: "Tilt Prism", sans-serif;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2") format("truetype");
-}
-.custom-font {
-  font-family: "Roboto", sans-serif;
-}
-
 .grid-footer {
-  color: black;
+  color: whitesmoke;
   background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
-  color: black;
-  background-color: #cc0000;
-  padding: 40px;
+  color: whitesmoke;
+  background-color: purple;
+  padding: 20px;
   border-bottom: 5px;
 }
 
@@ -483,6 +460,28 @@ h {
   background-color: transparent;
   padding: 10px;
   margin: 10px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+}
+
+.navbar-list li {
+  display: inline-block;
+}
+
+.navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-list li a:hover {
+  background-color: lightslategray;
 }
 
 .grid-container {
@@ -521,14 +520,36 @@ h {
 }
 
 .grid-header {
-  color: black;
+  color: whitesmoke;
   background-color: #681813;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 5px;
 }
 
 .background-color {
   background-color: lightgrey;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+}
+
+.navbar-list li {
+  display: inline-block;
+}
+
+.navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-list li a:hover {
+  background-color: lightslategray;
 }
 
 .container {
@@ -601,16 +622,16 @@ h {
 }
 
 .grid-footer {
-  color: black;
+  color: whitesmoke;
   background-color: #cc0000;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
-  color: black;
+  color: whitesmoke;
   background-color: #cc0000;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 5px;
 }
 
@@ -618,7 +639,7 @@ h {
   background-color: lightgrey;
 }
 
-#wite-text {
+#white-text {
   color: white;
 }
 
@@ -630,7 +651,7 @@ h {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: slategray;
+  background-color: purple;
 }
 
 .navbar-list li {
@@ -640,66 +661,30 @@ h {
 .navbar-list li a {
   display: block;
   color: white;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
 .navbar-list li a:hover {
-  background-color: pink;
+  background-color: lightslategray;
+}
+
+h1 {
+  color: black;
+}
+
+.my-link {
+  color: white;
+}
+
+.my-link:hover {
+  color: slategrey;
+}
+
+.my-link:visited {
+  color: purple;
 }
 
 /* =============
     Index
 ============= */
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 20px auto;
-  grid-template-columns: auto auto; /* Automatically adjusts column width */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Centers the grid items horizontally */
-  gap: 20px; /* Adds some spacing between content items */
-}
-
-.content {
-  /* Your individual content CSS rules can go here */
-  /* For example: */
-  padding: 10px;
-  background-color: #f0f0f0;
-}
-
-.page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Centers the content horizontally */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Centers the content vertically */
-  height: 100vh; /* Makes sure the content takes up the full viewport height */
-}
-
-.image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.image-container img {
-  max-width: 100%;
-  margin: 0 20px;
-}
-
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header header" "main main" "footer footer";
-  -ms-grid-rows: auto 20px 1fr 20px auto;
-  grid-template-rows: auto 1fr auto;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-}

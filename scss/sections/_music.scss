@@ -1,48 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+}
 
-  
-  
-  
-  
+.specific-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin: right;
 
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px; 
-    margin: 30px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-  }
 
-  .specific-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin: 20px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin: right;
-    
-    
-  }
-  
-  .page-wrapper {
-    background-color: #370031; 
-    padding: 20px; 
-    justify-content: space-between;
-    box-sizing: border-box; 
-    margin: 30px;
-   
-    
-  }
-  .custom-page-wrapper{
-    background-color: #370031;
-    padding: 10px;
-    margin: 30px;
-    box-sizing: border-box;
-   
+}
+
+.page-wrapper {
+  background-color: #370031;
+  padding: 20px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 30px;
+
+
+}
+
+.custom-page-wrapper {
+  background-color: #370031;
+  padding: 10px;
+  margin: 30px;
+  box-sizing: border-box;
+
 
 }
 
@@ -58,28 +52,31 @@
   font-family: 'TiltPrism';
   src: url('https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf') format('truetype');
 }
+
 .custom-heading {
   font-family: 'Tilt Prism', sans-serif;
   font-size: 40px;
 }
+
 .season {
   color: black;
 }
 
 
 .grid-footer {
-  color: black;
+  color: whitesmoke;
   background-color: #cc0000;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
-  color: black;
+  color: whitesmoke;
   background-color: #cc0000;
   padding: 20px;
   border-bottom: 5px;
 }
+
 .background-color {
   background-color: lightgrey;
 }
@@ -89,27 +86,46 @@
 }
 
 .color {
-  color:#370031
+  color: #370031
 }
+
 .navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color:red;
+  background-color: purple;
 }
 
 .navbar-list li {
-  display: inline-block; 
+  display: inline-block;
 }
 
 
 .navbar-list li a {
   display: block;
   color: white;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
+
 .navbar-list li a:hover {
-  background-color: pink;
+  background-color: lightslategray;
 }
-@media (max-width: 768px) 
+
+h1 {
+  color: black;
+}
+
+
+.my-link {
+  color: white;
+}
+
+.my-link:hover {
+  color: slategrey;
+}
+
+
+.my-link:visited {
+  color: purple;
+}

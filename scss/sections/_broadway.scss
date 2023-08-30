@@ -55,13 +55,12 @@ a {
 
 body {
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 #black-text {
   color: black;
 }
-h {
-  color: black;
-}
+
 
 @font-face {
   font-family: 'TiltPrism';
@@ -72,25 +71,18 @@ h {
   font-family: 'Tilt Prism', sans-serif;
 }
 
-@font-face {
-  font-family: 'Roboto'; 
-    src: url('https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2') format('truetype');
-}
 
 
-.custom-font {
-  font-family: 'Roboto', sans-serif;
-}
 
 .grid-footer {
-  color: black;
+  color: whitesmoke;
   background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
-  color: black;
+  color: whitesmoke;
   background-color: purple;
   padding: 20px;
   border-bottom: 5px;
@@ -105,13 +97,13 @@ h {
   padding: 10px;
   margin: 10px;
 }
-@media (max-width: 768px) 
+
 
 .navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color:red;
+  background-color: purple;
 }
 
 .navbar-list li {
@@ -126,5 +118,5 @@ h {
   text-decoration: none;
 }
 .navbar-list li a:hover {
-  background-color: pink;
+  background-color: lightslategray;
 }

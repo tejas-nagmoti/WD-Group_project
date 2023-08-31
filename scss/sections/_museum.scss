@@ -14,9 +14,7 @@
     
   }
   
-.colored-text {
-    color: white;
-}
+
 
 @font-face {
   font-family: 'TiltPrism';
@@ -66,3 +64,8 @@
 .navbar-list li a:hover {
   background-color: lightslategray;
 }
+
+h1 {
+  color: white; 
+}
+

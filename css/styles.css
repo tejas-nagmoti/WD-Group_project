@@ -519,10 +519,6 @@ div.sticky {
   border: 30px;
 }
 
-.colored-text {
-  color: white;
-}
-
 @font-face {
   font-family: "TiltPrism";
   src: url("https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf") format("truetype");
@@ -569,6 +565,10 @@ div.sticky {
 
 .navbar-list li a:hover {
   background-color: lightslategray;
+}
+
+h1 {
+  color: white;
 }
 
 .container {
@@ -701,6 +701,10 @@ body {
 }
 
 h1 {
+  color: white;
+}
+
+h2 {
   color: black;
 }
 
@@ -717,6 +721,10 @@ h1 {
 
 .my-link:visited {
   color: purple;
+}
+
+.orchestra {
+  text-align: center;
 }
 
 /* =============

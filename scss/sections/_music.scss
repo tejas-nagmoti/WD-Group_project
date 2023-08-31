@@ -115,9 +115,11 @@ body {
 }
 
 h1 {
+  color: white;
+}
+h2 {
   color: black;
 }
-
 
 .my-link {
   color: white;
@@ -132,4 +134,8 @@ h1 {
 
 .my-link:visited {
   color: purple;
+}
+
+.orchestra {
+  text-align: center;
 }

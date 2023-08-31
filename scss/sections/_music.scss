@@ -139,3 +139,41 @@ h2 {
 .orchestra {
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .navigation {
+      font-size: 14px; /
+      padding: 5px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navigation {
+    font-size: 17px; 
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navigation {
+      font-size: 18px;
+      padding: 12px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+      padding: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+      padding: 30px;
+  }
+}

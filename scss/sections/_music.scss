@@ -11,6 +11,9 @@
 
 .specific-container {
   display: flex;
+  flex: 1;
+  display: grid;
+  place-items: center;
   justify-content: space-between;
   padding: 30px;
   margin: 20px;

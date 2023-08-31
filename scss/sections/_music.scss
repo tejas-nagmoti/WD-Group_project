@@ -29,8 +29,9 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   margin: 30px;
-
-
+ display: flex;
+ justify-content: space-between;
+ gap: 20px;
 }
 
 .custom-page-wrapper {
@@ -38,8 +39,7 @@ body {
   padding: 10px;
   margin: 30px;
   box-sizing: border-box;
-
-
+  justify-content: center;
 }
 
 .center-aligned {
@@ -132,10 +132,4 @@ h1 {
 
 .my-link:visited {
   color: purple;
-}
-.grid-item {
-  background-color: lightgrey;
-  padding: 10px;
-  text-align: center;
-  
 }

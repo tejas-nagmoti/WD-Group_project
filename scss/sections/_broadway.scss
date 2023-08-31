@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  
+  flex-basis: 1;
   margin: 10px;
   margin-bottom: auto;
   margin-left: auto;
@@ -34,7 +34,6 @@ a {
   display: flex;
   background-color: #5a175d;
   padding: 50px;
-  flex-basis: 58%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -132,4 +131,9 @@ body {
 
 .my-link:visited {
   color: purple;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }

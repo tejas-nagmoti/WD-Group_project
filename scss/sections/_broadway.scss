@@ -90,7 +90,7 @@ body {
   background-color: lightgrey;
 }
 
-.grid-item1 {
+.grid-item2 {
   background-color: transparent;
   padding: 10px;
   margin: 10px;
@@ -117,4 +117,19 @@ body {
 }
 .navbar-list li a:hover {
   background-color: lightslategray;
+}
+
+.my-link {
+  color: white;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.my-link:hover {
+  color: slategrey;
+}
+
+
+.my-link:visited {
+  color: purple;
 }

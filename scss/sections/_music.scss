@@ -17,8 +17,10 @@
   margin-bottom: auto;
   margin-left: auto;
   margin: right;
+}
 
-
+body {
+  font-family: 'Roboto', sans-serif; 
 }
 
 .page-wrapper {
@@ -93,7 +95,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: purple;
+  background-color: #4c2a85;
 }
 
 .navbar-list li {
@@ -119,6 +121,8 @@ h1 {
 
 .my-link {
   color: white;
+  text-decoration: none; 
+  transition: color 0.3s; 
 }
 
 .my-link:hover {

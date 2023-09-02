@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Tilt Prism', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Default font for most elements */
     margin: 0;
     padding: 0;
 }
@@ -17,24 +17,65 @@ header {
     justify-content: center;
     align-items: center;
     height: 50px;
+    font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for navbar */
 }
 
-/* Navbar button styles */
 .navbar a {
     margin: 0 20px;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Increase padding for a more elegant shape */
-    border: none; /* Remove the border */
-    background-color: transparent; /* Make the background transparent initially */
-    transition: color 0.3s, background-color 0.3s; /* Add transitions for smooth color and background changes */
-    border-radius: 30px; /* Add rounded corners for an elegant look */
 }
 
-/* Change button color and background on hover */
-.navbar a:hover {
-    color: #fff; /* New text color when hovering */
-    background-color: #4c2a85; /* Background color when hovering */
+/* Mobile navigation styles */
+.mobile-navbar {
+    background-color: #492d79;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Show mobile navbar and hide burger icon in mobile view */
+@media (max-width: 768px) {
+    .mobile-navbar {
+        display: flex;
+    }
+    #burger-icon {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #492d79;
+}
+
+/* Show mobile menu when burger icon is clicked */
+.burger-icon.active + .mobile-menu {
+    display: flex;
+}
+
+/* Style for mobile menu links */
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for mobile menu */
+}
+
+/* Hover effect for mobile menu links */
+.mobile-menu a:hover {
+    background-color: #4c2a85;
 }
 
 /* Page content styles */
@@ -51,7 +92,7 @@ header {
     padding: 20px;
     text-align: center;
     background-color: rgba(219, 27, 27, 0.773);
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font to paragraphs */
+    font-family: 'Poppins', sans-serif; /* Poppins font for event cards */
 }
 
 .event-card img {
@@ -69,32 +110,39 @@ header {
     position: static;
     bottom: 0;
     width: 100%;
+    font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for footer */
 }
 
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    /* Adjust styles for tablets and smaller screens */
-    .container {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        padding: 10px;
-    }
-
-    .navbar {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-        padding: 10px 15px;
-    }
+/* Burger icon styles */
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
-@media (max-width: 480px) {
-    /* Adjust styles for mobile phones */
-    .container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 5px;
-    }
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+/* Rotate bars for burger icon animation */
+.burger-icon.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }

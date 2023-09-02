@@ -407,7 +407,7 @@ body {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: red;
+  background-color: rgb(195, 186, 186);
 }
 
 .event-card img {
@@ -495,9 +495,13 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: rgb(206, 12, 12);
+}
+
 /* Navbar styles */
 .navbar {
-  background-color: #4c2a85;
+  background-color: #492d79;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +524,7 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -529,7 +533,7 @@ body {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: red;
+  background-color: rgba(244, 89, 89, 0.541);
 }
 
 .event-card img {

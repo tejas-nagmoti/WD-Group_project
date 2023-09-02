@@ -373,128 +373,7 @@ body {
   padding: 0;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #4c2a85;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-}
-
-.navbar a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Page content styles */
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.event-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  background-color: rgb(195, 186, 186);
-}
-
-.event-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-.footer {
-  background-color: #4c2a85;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Global styles */
-body {
-  font-family: "Tilt Prism", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar styles */
-.navbar {
-  background-color: #4c2a85;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-}
-
-.navbar a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Page content styles */
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.event-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  background-color: red;
-}
-
-.event-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-.footer {
-  background-color: #4c2a85;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Global styles */
-body {
-  font-family: "Tilt Prism", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
+/* Apply the background color to both header and navbar */
 header {
   background-color: rgb(206, 12, 12);
 }
@@ -514,10 +393,21 @@ header {
   height: 50px;
 }
 
+/* Navbar button styles */
 .navbar a {
   margin: 0 20px;
   color: white;
   text-decoration: none;
+  padding: 5px 15px; /* Add padding to create a box around the button */
+  border: 1px solid transparent; /* Add a transparent border initially */
+  -webkit-transition: color 0.3s, border 0.3s;
+  transition: color 0.3s, border 0.3s; /* Add transitions for smooth color and border changes */
+}
+
+/* Change button color and border on hover */
+.navbar a:hover {
+  color: #000000; /* New color when hovering */
+  border: 1px solid rgb(0, 0, 0); /* Add a white border when hovering */
 }
 
 /* Page content styles */
@@ -529,11 +419,173 @@ header {
   padding: 20px;
 }
 
+/* Apply the background color and font to event cards */
 .event-card {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: rgba(244, 89, 89, 0.541);
+  background-color: rgba(219, 27, 27, 0.773);
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to paragraphs */
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #4c2a85;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Global styles */
+body {
+  font-family: "Tilt Prism", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply the background color to both header and navbar */
+header {
+  background-color: rgb(206, 12, 12);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #492d79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+/* Navbar button styles */
+.navbar a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px; /* Add padding to create a box around the button */
+  border: 1px solid transparent; /* Add a transparent border initially */
+  -webkit-transition: color 0.3s, border 0.3s;
+  transition: color 0.3s, border 0.3s; /* Add transitions for smooth color and border changes */
+}
+
+/* Change button color and border on hover */
+.navbar a:hover {
+  color: #000000; /* New color when hovering */
+  border: 1px solid rgb(0, 0, 0); /* Add a white border when hovering */
+}
+
+/* Page content styles */
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Apply the background color and font to event cards */
+.event-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(219, 27, 27, 0.773);
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to paragraphs */
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #4c2a85;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Global styles */
+body {
+  font-family: "Tilt Prism", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply the background color to both header and navbar */
+header {
+  background-color: rgb(206, 12, 12);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #492d79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+/* Navbar button styles */
+.navbar a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Increase padding for a more elegant shape */
+  border: none; /* Remove the border */
+  background-color: transparent; /* Make the background transparent initially */
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s; /* Add transitions for smooth color and background changes */
+  border-radius: 12px; /* Add rounded corners for an elegant look */
+}
+
+/* Change button color and background on hover */
+.navbar a:hover {
+  color: #fff; /* New text color when hovering */
+  background-color: #4c2a85; /* Background color when hovering */
+}
+
+/* Page content styles */
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Apply the background color and font to event cards */
+.event-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(219, 27, 27, 0.773);
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to paragraphs */
 }
 
 .event-card img {

@@ -5,6 +5,7 @@ body {
     padding: 0;
 }
 
+/* Apply the background color to both header and navbar */
 header {
     background-color: rgb(206, 12, 12);
 }
@@ -18,10 +19,22 @@ header {
     height: 50px;
 }
 
+/* Navbar button styles */
 .navbar a {
     margin: 0 20px;
     color: white;
     text-decoration: none;
+    padding: 10px 20px; /* Increase padding for a more elegant shape */
+    border: none; /* Remove the border */
+    background-color: transparent; /* Make the background transparent initially */
+    transition: color 0.3s, background-color 0.3s; /* Add transitions for smooth color and background changes */
+    border-radius: 12px; /* Add rounded corners for an elegant look */
+}
+
+/* Change button color and background on hover */
+.navbar a:hover {
+    color: #fff; /* New text color when hovering */
+    background-color: #4c2a85; /* Background color when hovering */
 }
 
 /* Page content styles */
@@ -32,11 +45,13 @@ header {
     padding: 20px;
 }
 
+/* Apply the background color and font to event cards */
 .event-card {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    background-color: rgba(244, 89, 89, 0.541);
+    background-color: rgba(219, 27, 27, 0.773);
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to paragraphs */
 }
 
 .event-card img {

@@ -5,34 +5,51 @@ body {
     padding: 0;
 }
 
+/* Apply the background color to both header and navbar */
+header {
+    background-color: rgb(206, 12, 12);
+}
+
 /* Navbar styles */
 .navbar {
-    background-color: #4c2a85;
+    background-color: #492d79;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
 }
 
+/* Navbar button styles */
 .navbar a {
     margin: 0 20px;
     color: white;
     text-decoration: none;
+    padding: 5px 15px; /* Add padding to create a box around the button */
+    border: 1px solid transparent; /* Add a transparent border initially */
+    transition: color 0.3s, border 0.3s; /* Add transitions for smooth color and border changes */
+}
+
+/* Change button color and border on hover */
+.navbar a:hover {
+    color: #000000; /* New color when hovering */
+    border: 1px solid rgb(0, 0, 0); /* Add a white border when hovering */
 }
 
 /* Page content styles */
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
+/* Apply the background color and font to event cards */
 .event-card {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    background-color: rgb(195, 186, 186);
+    background-color: rgba(219, 27, 27, 0.773);
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to paragraphs */
 }
 
 .event-card img {

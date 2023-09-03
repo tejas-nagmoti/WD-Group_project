@@ -534,6 +534,16 @@ body {
 /* Apply the background color to both header and navbar */
 header {
   background-color: rgb(206, 12, 12);
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Navbar styles */
@@ -560,28 +570,30 @@ header {
 
 /* Mobile navigation styles */
 .mobile-navbar {
-  background-color: #492d79;
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 20px;
-  position: relative;
-  z-index: 1000;
 }
 
 /* Show mobile navbar and hide burger icon in mobile view */
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
   .mobile-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #492d79;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
   }
   #burger-icon {
-    display: none;
+    display: block;
+    cursor: pointer;
   }
 }
 .mobile-menu {
@@ -660,9 +672,7 @@ header {
 /* Burger icon styles */
 .burger-icon {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -703,6 +713,14 @@ header {
           transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust header height for smaller screens */
+  header {
+    height: 80px;
+  }
+  /* Additional responsive styles for other elements can be added here */
+}
 /* Global styles */
 body {
   font-family: "Tilt Prism", sans-serif;

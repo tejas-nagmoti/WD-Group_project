@@ -109,3 +109,18 @@ h1 {
       padding: 30px;
   }
 }
+
+.my-link {
+  color: white;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.my-link:hover {
+  color: slategrey;
+}
+
+
+.my-link:visited {
+  color: orange;
+}

@@ -570,7 +570,7 @@ header {
 
 /* Mobile navigation styles */
 .mobile-navbar {
-  display: none;
+  display: none; /* Initially hide mobile navbar */
 }
 
 /* Show mobile navbar and hide burger icon in mobile view */
@@ -579,53 +579,29 @@ header {
     display: none;
   }
   .mobile-navbar {
+    display: block; /* Show mobile navbar */
+    background-color: #492d79;
+    font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for mobile navbar */
+  }
+  .mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #492d79;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10px 20px;
-  }
-  #burger-icon {
-    display: block;
-    cursor: pointer;
   }
 }
-.mobile-menu {
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #492d79;
-}
-
-/* Show mobile menu when burger icon is clicked */
-.burger-icon.active + .mobile-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* Style for mobile menu links */
 .mobile-menu a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 20px;
   text-align: center;
   width: 100%;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for mobile menu */
 }
 
 /* Hover effect for mobile menu links */
@@ -672,7 +648,9 @@ header {
 /* Burger icon styles */
 .burger-icon {
   cursor: pointer;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Display burger icon in desktop view */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -719,7 +697,18 @@ header {
   header {
     height: 80px;
   }
-  /* Additional responsive styles for other elements can be added here */
+  /* Hide desktop navbar in mobile view */
+  .navbar {
+    display: none;
+  }
+  /* Show burger icon in mobile view */
+  .burger-icon {
+    display: block;
+  }
+  /* Hide mobile menu by default in mobile view */
+  .mobile-menu {
+    display: none;
+  }
 }
 /* Global styles */
 body {

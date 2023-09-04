@@ -346,6 +346,56 @@ li {
   text-decoration: none;
 }
 
+img {
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+.content grid index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .content grid index {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
+.content grid performing-arts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .content grid performing-arts {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
+.content grid visual-arts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .content grid visual-arts {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
 /* =============
     Typography
 ============= */

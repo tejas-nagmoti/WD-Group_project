@@ -1,12 +1,12 @@
 /* =============
-  Visual-arts
+  Performing-arts
 ============= */
 
 body {
     background-color: var(--lightgray);
     }
     
-    .content grid visual-arts{
+    .content grid performing-arts{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". content .";
@@ -17,8 +17,3 @@ body {
     
     
     }    
-
-    #picture{
-        margin: auto;
-    }
-    

@@ -1,13 +1,14 @@
 /* Global styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Default font for most elements */
+    font-family: 'Roboto', sans-serif; /* Updated font to Roboto */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Updated background color to light grey */
 }
 
 /* Apply the background color to both header and navbar */
 header {
-    background-color: rgb(206, 12, 12);//681813
+    background-color: #681813; /* Updated header color */
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -42,7 +43,7 @@ header {
     }
     .mobile-navbar {
         display: block; /* Show mobile navbar */
-        background-color: #492d79;
+        background-color: #681813; /* Updated mobile navbar color */
         font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for mobile navbar */
     }
     .mobile-menu {
@@ -80,7 +81,7 @@ header {
     padding: 20px;
     text-align: center;
     background-color: rgba(219, 27, 27, 0.773);
-    font-family: 'Poppins', sans-serif; /* Poppins font for event cards */
+    font-family: 'Roboto', sans-serif; /* Updated font to Roboto for event cards */
 }
 
 .event-card img {
@@ -91,7 +92,7 @@ header {
 
 /* Footer styles */
 .footer {
-    background-color: #4c2a85;
+    background-color: #681813; /* Updated footer color */
     color: white;
     text-align: center;
     padding: 10px 0;

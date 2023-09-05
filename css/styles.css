@@ -529,7 +529,7 @@ body {
   font-family: "Roboto", sans-serif; /* Updated font to Roboto */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Updated background color to light grey */
+  background-color: lightgray; /* Updated background color to light grey */
 }
 
 /* Apply the background color to both header and navbar */

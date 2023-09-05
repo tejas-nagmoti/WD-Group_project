@@ -19,14 +19,8 @@ a {
 
 
 .container1 {
-  display: grid; 
-  grid-template-columns: repeate(2,1fr);
-  gap: 10px;
-  
-}
-
-.something container1 {
   display: flex;
+  flex-wrap: wrap:
   justify-content: space-between;
   padding: 30px;
   flex-basis: 2;
@@ -36,6 +30,15 @@ a {
   margin-right: auto;
   height: 120vh;
   border: 1px solid #ccc;
+}
+
+
+.item {
+  flex-basis: calc(50% - 10px)
+   padding: 10px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   margin-bottom: 20px;
 }
 
 .page-wrapper1 {
@@ -48,7 +51,6 @@ a {
   margin-right: auto;
   box-sizing: border-box;
   margin: 30px;
-
 }
 
 .center-aligned {
@@ -168,14 +170,22 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container1 {
-      padding: 10px;
+    padding: 10px;
   }
+  .item {
+    flex-basis: calc(100% -20px);
+  }
+
+  
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .container1 {
       padding: 15px;
+  }
+  .item {
+    margin: 5px 0;
   }
 }
 @media (min-width: 1025px) {

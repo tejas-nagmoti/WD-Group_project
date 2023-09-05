@@ -19,20 +19,28 @@ a {
 
 
 .container1 {
+  display: grid; 
+  grid-template-columns: repeate(2,1fr);
+  gap: 10px;
+  
+}
+
+.something container1 {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  flex-basis: 3;
+  flex-basis: 2;
   margin: 10px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   height: 120vh;
-  
+  border: 1px solid #ccc;
 }
 
 .page-wrapper1 {
   display: flex;
+  flex-wrap: wrap;
   background-color: #5a175d;
   padding: 50px;
   margin-bottom: auto;

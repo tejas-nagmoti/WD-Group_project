@@ -37,7 +37,10 @@
         color: white; 
         text-decoration: none;
     }
-
+    #subtitlehomepage{
+        font-family: 'Roboto', sans-serif;
+        color: white; 
+    }
 }
 
 .homepagelink:link, a.homepagelink:visited{
@@ -47,3 +50,7 @@
 .homepagelink:hover, a.homepagelink:active{
     color: lightgray;
 }    
+
+body{
+    background-image: url(img/philly-night.jpg)
+}

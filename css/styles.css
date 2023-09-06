@@ -441,6 +441,10 @@ textarea {
   color: white;
   text-decoration: none;
 }
+#homepage-header #subtitlehomepage {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
 
 .homepagelink:link, a.homepagelink:visited {
   color: white;
@@ -449,6 +453,10 @@ textarea {
 
 .homepagelink:hover, a.homepagelink:active {
   color: lightgray;
+}
+
+body {
+  background-image: url(img/philly-night.jpg);
 }
 
 #navigation-performingarts {
@@ -496,6 +504,10 @@ textarea {
   font-family: "Tilt Prism", cursive;
   color: white;
   text-decoration: none;
+}
+#performingarts-header #subtitleperformingarts {
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .performingartslink:link, a.performingartslink:visited {
@@ -553,6 +565,10 @@ textarea {
   color: white;
   text-decoration: none;
 }
+#visual-artsheader #subtitlevisualarts {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
 
 .visualartslink:link, a.visualartslink:visited {
   color: white;
@@ -561,4 +577,64 @@ textarea {
 
 .visualartslink:hover, a.visualartslink:active {
   color: lightgray;
+}
+
+.visualartscontainer1 {
+  margin: 20px auto auto 20px;
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 20px 200px;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.visualartscontainer2 {
+  margin: 20px auto auto 20px;
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 20px 200px;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.visualarts1-box {
+  background-color: #008264;
+  padding: 20px;
+  color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.visualarts2-box {
+  background-color: #008264;
+  padding: 20px;
+  color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
 }

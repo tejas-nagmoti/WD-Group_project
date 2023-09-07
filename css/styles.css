@@ -456,8 +456,10 @@ textarea {
   color: lightgray;
 }
 
-.homepage {
+body {
   background-image: url(img/philly-night.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -592,64 +594,37 @@ footer {
   color: lightgray;
 }
 
-.visualartscontainer1 {
-  margin: 20px auto auto 20px;
-  width: 400px;
-  height: 400px;
-  background-color: lightgray;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px 20px 200px;
-  grid-template-columns: 200px 200px;
-  grid-row: auto auto auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.visualartscontainer2 {
-  margin: 20px auto auto 20px;
-  width: 400px;
-  height: 400px;
-  background-color: lightgray;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px 20px 200px;
-  grid-template-columns: 200px 200px;
-  grid-row: auto auto auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.visualarts1-box {
-  background-color: #008264;
-  padding: 20px;
-  color: lightgray;
+.visualarts-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 18px;
+  background-color: #008264;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.visualarts2-box {
-  background-color: #008264;
-  padding: 20px;
-  color: lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 18px;
+.visualarts-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visualarts-box h3 {
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#page-title {
+  text-align: center;
 }
 
 footer {

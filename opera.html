@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>For the Love of Arts Philly</title>    
 </head>
-
-<header>
-    <img src="images/logos/philly_art_logo.png" alt="Logo" class="logo-left">
-    <h1>For the Love of Arts Philly</h1>
-    <img src="images/logos/philly_art_logo.png" alt="Logo" class="logo-right">
-</header>
-
 <body>
-    <div class="navbar">
+    <header>
+        <img src="images/logos/philly_art_logo.png" alt="Logo" class="logo-left">
+        <h1>For the Love of Arts Philly</h1> <br><br>
+        <!-- <p>All of the art Philly has to offer in one easy place</p> -->
+        <img src="images/logos/philly_art_logo.png" alt="Logo" class="logo-right">
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-navbar">
+        <div class="burger-icon" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="theaters.html">Theaters</a>
+            <a href="concerts.html">Concerts</a>
+            <a href="opera.html">Opera</a>
+        </div>
+    </div>
+
+    <!-- Desktop navigation -->
+    <div class="navbar" id="navbar">
         <a href="index.html">Home</a>
         <a href="theaters.html">Theaters</a>
         <a href="concerts.html">Concerts</a>
         <a href="opera.html">Opera</a>
     </div>
-
-<body>
-<body>
-
 
     <h1><center>Opera Philadelphia</center></h1>
 
@@ -156,7 +169,7 @@
         <p>&copy; For the Love of Art Philly 2023. All rights reserved.</p>
 
         <section id="validator-logo">
-            <a href="" target="_blank">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftejas--wd-group-project.netlify.app%2Fopera" target="_blank">
             <img src="images/logos/html-logo.svg" alt="Valid HTML 5">
             </a>
         </section>

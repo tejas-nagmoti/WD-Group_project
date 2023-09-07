@@ -78,6 +78,19 @@
     font-size: 24px;
 }
 
+.buttonva{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009B77;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+
+
 #page-title{
     text-align: center;
 }

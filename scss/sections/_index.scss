@@ -1,3 +1,9 @@
+body{
+    background-image: url("img/philly-night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #navigation-homepage {
 
     background-color: #4c2a85; 
@@ -52,11 +58,6 @@
     color: lightgray;
 }    
 
-#homepage{
-    background-image: url("img/philly-night.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 footer{
     background-color: red;
@@ -65,3 +66,22 @@ footer{
 }
 
 
+.homeimage-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.homeimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homeimage img{
+    max-width: 100%;
+    height: auto;
+}

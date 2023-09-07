@@ -395,6 +395,12 @@ textarea {
 /* =============
     Footer
 ============= */
+body {
+  background-image: url("img/philly-night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #navigation-homepage {
   background-color: #4c2a85;
   -webkit-box-pack: center;
@@ -456,16 +462,37 @@ textarea {
   color: lightgray;
 }
 
-#homepage {
-  background-image: url("img/philly-night.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 footer {
   background-color: red;
   text-align: center;
   padding: 20px;
+}
+
+.homeimage-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homeimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeimage img {
+  max-width: 100%;
+  height: auto;
 }
 
 #navigation-performingarts {

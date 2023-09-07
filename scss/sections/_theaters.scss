@@ -96,21 +96,6 @@ h1{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
-
-    /* Apply the background color and font to event cards */
-.event-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    background-color: #ffb81c;;
-    font-family: 'Roboto', sans-serif; /* Updated font to Roboto for event cards */
-}
-
-.event-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
 }
 
 

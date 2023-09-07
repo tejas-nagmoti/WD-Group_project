@@ -368,14 +368,50 @@ textarea {
 ============= */
 /* Global styles */
 body {
-  font-family: "Tilt Prism", sans-serif;
+  font-family: "Roboto", sans-serif; /* Updated font to Roboto */
   margin: 0;
   padding: 0;
+  background-color: lightgray; /* Updated background color to light grey */
 }
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: rgb(206, 12, 12);
+  background-color: #e53b2f;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Tilt Prism", sans-serif;
+  position: relative; /* Add this for positioning the logo */
+}
+
+/* Logo styles */
+.logo-left,
+.logo-right {
+  width: 61px; /* Adjust the width as needed */
+  height: auto;
+  position: absolute; /* Position the logos */
+  top: 50%; /* Adjust the vertical position */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.logo-left {
+  left: 20px; /* Adjust the left position */
+}
+
+.logo-right {
+  right: 20px; /* Adjust the right position */
+}
+
+h1 {
+  font-family: "Tilt Prism", sans-serif;
 }
 
 /* Navbar styles */
@@ -391,44 +427,73 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for navbar */
 }
 
-/* Navbar button styles */
 .navbar a {
   margin: 0 20px;
   color: white;
   text-decoration: none;
-  padding: 5px 15px; /* Add padding to create a box around the button */
-  border: 1px solid transparent; /* Add a transparent border initially */
-  -webkit-transition: color 0.3s, border 0.3s;
-  transition: color 0.3s, border 0.3s; /* Add transitions for smooth color and border changes */
 }
 
-/* Change button color and border on hover */
-.navbar a:hover {
-  color: #000000; /* New color when hovering */
-  border: 1px solid rgb(0, 0, 0); /* Add a white border when hovering */
+/* Mobile navigation styles */
+.mobile-navbar {
+  display: none; /* Initially hide mobile navbar */
+}
+
+/* Show mobile navbar and hide burger icon in mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block; /* Show mobile navbar */
+    background-color: #681813; /* Updated mobile navbar color */
+    font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for mobile navbar */
+  }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #492d79;
+  }
+}
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for mobile menu links */
+.mobile-menu a:hover {
+  background-color: #4c2a85;
 }
 
 /* Page content styles */
-.container {
+.concerts-container {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
   padding: 20px;
+  /* Apply the background color and font to event cards */
 }
-
-/* Apply the background color and font to event cards */
-.event-card {
+.concerts-container .event-card {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: rgba(219, 27, 27, 0.773);
-  font-family: "Poppins", sans-serif; /* Apply Poppins font to paragraphs */
+  background-color: #006e33;
+  font-family: "Roboto", sans-serif; /* Updated font to Roboto for event cards */
 }
-
-.event-card img {
+.concerts-container .event-card img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
@@ -436,94 +501,81 @@ header {
 
 /* Footer styles */
 .footer {
-  background-color: #4c2a85;
+  background-color: #681813; /* Updated footer color */
   color: white;
   text-align: center;
   padding: 10px 0;
   position: static;
   bottom: 0;
   width: 100%;
+  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for footer */
 }
 
-/* Global styles */
-body {
-  font-family: "Tilt Prism", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Apply the background color to both header and navbar */
-header {
-  background-color: rgb(206, 12, 12);
-}
-
-/* Navbar styles */
-.navbar {
-  background-color: #492d79;
+/* Burger icon styles */
+.burger-icon {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
+  display: flex; /* Display burger icon in desktop view */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Navbar button styles */
-.navbar a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-  padding: 5px 15px; /* Add padding to create a box around the button */
-  border: 1px solid transparent; /* Add a transparent border initially */
-  -webkit-transition: color 0.3s, border 0.3s;
-  transition: color 0.3s, border 0.3s; /* Add transitions for smooth color and border changes */
-}
-
-/* Change button color and border on hover */
-.navbar a:hover {
-  color: #000000; /* New color when hovering */
-  border: 1px solid rgb(0, 0, 0); /* Add a white border when hovering */
-}
-
-/* Page content styles */
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Apply the background color and font to event cards */
-.event-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(219, 27, 27, 0.773);
-  font-family: "Poppins", sans-serif; /* Apply Poppins font to paragraphs */
-}
-
-.event-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-.footer {
-  background-color: #4c2a85;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: static;
-  bottom: 0;
+.bar {
   width: 100%;
+  height: 4px;
+  background-color: white;
+  -webkit-transition: opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
 }
 
+/* Rotate bars for burger icon animation */
+.burger-icon.active .bar:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+          transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust header height for smaller screens */
+  header {
+    height: 80px;
+  }
+  /* Hide desktop navbar in mobile view */
+  .navbar {
+    display: none;
+  }
+  /* Show burger icon in mobile view */
+  .burger-icon {
+    display: block;
+  }
+  /* Hide mobile menu by default in mobile view */
+  .mobile-menu {
+    display: none;
+  }
+}
 /* Global styles */
 body {
   font-family: "Roboto", sans-serif; /* Updated font to Roboto */
@@ -534,7 +586,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: #681813;
+  background-color: #e53b2f;
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,11 +701,221 @@ h1 {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: rgba(219, 27, 27, 0.773);
+  background-color: #ffc72c;
   font-family: "Roboto", sans-serif; /* Updated font to Roboto for event cards */
 }
 
 .event-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #681813; /* Updated footer color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for footer */
+}
+
+/* Burger icon styles */
+.burger-icon {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Display burger icon in desktop view */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  -webkit-transition: opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+}
+
+/* Rotate bars for burger icon animation */
+.burger-icon.active .bar:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+          transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust header height for smaller screens */
+  header {
+    height: 80px;
+  }
+  /* Hide desktop navbar in mobile view */
+  .navbar {
+    display: none;
+  }
+  /* Show burger icon in mobile view */
+  .burger-icon {
+    display: block;
+  }
+  /* Hide mobile menu by default in mobile view */
+  .mobile-menu {
+    display: none;
+  }
+}
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif; /* Updated font to Roboto */
+  margin: 0;
+  padding: 0;
+  background-color: lightgray; /* Updated background color to light grey */
+}
+
+/* Apply the background color to both header and navbar */
+header {
+  background-color: #e53b2f;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Tilt Prism", sans-serif;
+  position: relative; /* Add this for positioning the logo */
+}
+
+/* Logo styles */
+.logo-left,
+.logo-right {
+  width: 61px; /* Adjust the width as needed */
+  height: auto;
+  position: absolute; /* Position the logos */
+  top: 50%; /* Adjust the vertical position */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.logo-left {
+  left: 20px; /* Adjust the left position */
+}
+
+.logo-right {
+  right: 20px; /* Adjust the right position */
+}
+
+h1 {
+  font-family: "Tilt Prism", sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #492d79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for navbar */
+}
+
+.navbar a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile navigation styles */
+.mobile-navbar {
+  display: none; /* Initially hide mobile navbar */
+}
+
+/* Show mobile navbar and hide burger icon in mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block; /* Show mobile navbar */
+    background-color: #681813; /* Updated mobile navbar color */
+    font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for mobile navbar */
+  }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #492d79;
+  }
+}
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for mobile menu links */
+.mobile-menu a:hover {
+  background-color: #4c2a85;
+}
+
+/* Page content styles */
+.theaters-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  /* Apply the background color and font to event cards */
+}
+.theaters-container .event-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffb81c;
+  font-family: "Roboto", sans-serif; /* Updated font to Roboto for event cards */
+}
+.theaters-container .event-card img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;

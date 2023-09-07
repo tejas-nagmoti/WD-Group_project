@@ -8,7 +8,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-    background-color: #681813;
+    background-color: #e53b2f;
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -91,19 +91,18 @@ h1{
 }
 
 /* Page content styles */
-.container {
+.theaters-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
-}
 
-/* Apply the background color and font to event cards */
+    /* Apply the background color and font to event cards */
 .event-card {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    background-color: rgba(219, 27, 27, 0.773);
+    background-color: #ffb81c;;
     font-family: 'Roboto', sans-serif; /* Updated font to Roboto for event cards */
 }
 
@@ -112,6 +111,9 @@ h1{
     height: auto;
     margin-bottom: 10px;
 }
+}
+
+
 
 /* Footer styles */
 .footer {

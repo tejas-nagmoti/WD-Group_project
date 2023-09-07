@@ -1,8 +1,3 @@
-main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-}
 
 
 .container {
@@ -28,7 +23,6 @@ a {
 .container1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 30px;
   flex-basis: 2;
   margin: 10px;
@@ -177,16 +171,56 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container1 {
     padding: 10px;
   }
   .item {
     flex-basis: calc(100% -20px);
   }
-
+  div.main_table
+	{
+		display: block;
+		margin-right: 0;
+	}
+	div.left_cell
+	{
+		display: block;
+		width: 100%;
+		margin-right: 0px;
+		min-height: 0;
+	}
+	div.right_cell
+	{
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
   
 }
+
+div.main_table
+{
+	display: table;
+	margin-right: -5px;
+	margin-top: -8px;
+	width: 100%;
+}
+
+div.right_cell
+{
+	display: table-cell;
+	width: 345px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+div.left_cell
+{
+	display: table-cell;
+	min-height: 570px;
+	vertical-align: top;
+}
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .container1 {
       padding: 15px;

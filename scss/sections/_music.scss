@@ -27,17 +27,16 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
-.page-wrapper {
+.page-wrapper2 {
   background-color: #370031;
   padding: 20px;
-  
   box-sizing: border-box;
   margin: 30px;
- display: flex;
- gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .custom-page-wrapper {
@@ -124,8 +123,8 @@ body {
 
 .my-link {
   color: white;
-  text-decoration: none; 
-  transition: color 0.3s; 
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .my-link:hover {
@@ -143,39 +142,40 @@ body {
 
 @media (max-width: 600px) {
   .navigation {
-      font-size: 14px; /
-      padding: 5px;
+    font-size: 14px;/ padding: 5px;
   }
 }
 
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .navigation {
-    font-size: 17px; 
+    font-size: 17px;
     padding: 8px;
   }
 }
 
 @media (min-width: 1025px) {
   .navigation {
-      font-size: 18px;
-      padding: 12px; 
+    font-size: 18px;
+    padding: 12px;
   }
 }
 
 @media (max-width: 600px) {
   .container {
-      padding: 10px;
+    padding: 10px;
   }
 }
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .container {
-      padding: 15px;
+    padding: 15px;
   }
 }
+
 @media (min-width: 1025px) {
   .container {
-      padding: 30px;
+    padding: 30px;
   }
 }
 

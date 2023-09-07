@@ -692,6 +692,10 @@ footer {
   transition: background-color 0.5s;
 }
 
+#picturephillyarts {
+  border-radius: 25px;
+}
+
 #page-title {
   text-align: center;
 }

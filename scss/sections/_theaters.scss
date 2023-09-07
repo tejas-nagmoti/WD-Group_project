@@ -16,6 +16,10 @@ header {
     font-family: 'Tilt Prism', sans-serif;
     position: relative; /* Add this for positioning the logo */
 }
+h1{
+    text-align: center;
+    font-family: 'Tilt Prism', sans-serif;
+}
 
 /* Logo styles */
 .logo-left,
@@ -35,9 +39,7 @@ header {
     right: 20px; /* Adjust the right position */
 }
 
-h1{
-    font-family: 'Tilt Prism', sans-serif;
-}
+
 /* Navbar styles */
 .navbar {
     background-color: #492d79;

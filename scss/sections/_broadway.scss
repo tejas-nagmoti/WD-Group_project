@@ -7,9 +7,6 @@
   margin: 0 auto;
   padding: 20px;
 }
-
-
-
 .content {
   padding: 10px;
 }
@@ -17,9 +14,6 @@
 a {
   text-decoration: none;
 }
-
-
-
 .container1 {
   display: flex;
   flex-wrap: wrap;
@@ -32,8 +26,6 @@ a {
   height: 120vh;
   border: 1px solid #ccc;
 }
-
-
 .item {
   flex-basis: calc(50% - 10px)
    padding: 10px;
@@ -80,9 +72,7 @@ body {
   font-family: 'Tilt Prism', sans-serif;
 }
 
-.half-column {
-  flex: 50%;
-}
+
 
 
 .grid-footer {
@@ -171,27 +161,7 @@ body {
   }
 }
 
-div.main_table
-{
-	display: table;
-	margin-right: -5px;
-	margin-top: -8px;
-	width: 100%;
-}
 
-div.right_cell
-{
-	display: table-cell;
-	width: 345px;
-	padding-left: 10px;
-	vertical-align: top;
-}
-div.left_cell
-{
-	display: table-cell;
-	min-height: 570px;
-	vertical-align: top;
-}
 @media (max-width: 800px) {
   .container1 {
     padding: 10px;

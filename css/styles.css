@@ -534,7 +534,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: #681813; /* Updated header color */
+  background-color: #681813;
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,6 +546,26 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Tilt Prism", sans-serif;
+  position: relative; /* Add this for positioning the logo */
+}
+
+/* Logo styles */
+.logo-left,
+.logo-right {
+  width: 61px; /* Adjust the width as needed */
+  height: auto;
+  position: absolute; /* Position the logos */
+  top: 50%; /* Adjust the vertical position */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.logo-left {
+  left: 20px; /* Adjust the left position */
+}
+
+.logo-right {
+  right: 20px; /* Adjust the right position */
 }
 
 h1 {

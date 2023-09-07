@@ -39,6 +39,7 @@
     }
     #subtitlevisualarts{
         font-family: 'Roboto', sans-serif;
+        font-style: italic;
         color: white; 
     }
 
@@ -96,3 +97,7 @@
     font-size: 18px;
 }
 
+footer {
+    background-color: red;
+    text-align: center;
+}

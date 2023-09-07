@@ -39,6 +39,7 @@
     }
     #subtitlehomepage{
         font-family: 'Roboto', sans-serif;
+        font-style: italic;
         color: white; 
     }
 }
@@ -51,6 +52,11 @@
     color: lightgray;
 }    
 
-body{
+.homepage{
     background-image: url(img/philly-night.jpg)
+}
+
+footer{
+    background-color: red;
+    text-align: center;
 }

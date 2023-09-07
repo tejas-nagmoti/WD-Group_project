@@ -443,6 +443,7 @@ textarea {
 }
 #homepage-header #subtitlehomepage {
   font-family: "Roboto", sans-serif;
+  font-style: italic;
   color: white;
 }
 
@@ -455,8 +456,13 @@ textarea {
   color: lightgray;
 }
 
-body {
+.homepage {
   background-image: url(img/philly-night.jpg);
+}
+
+footer {
+  background-color: red;
+  text-align: center;
 }
 
 #navigation-performingarts {
@@ -507,6 +513,7 @@ body {
 }
 #performingarts-header #subtitleperformingarts {
   font-family: "Roboto", sans-serif;
+  font-style: italic;
   color: white;
 }
 
@@ -517,6 +524,11 @@ body {
 
 .performingartslink:hover, a.performingartslink:active {
   color: lightgray;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
 }
 
 #navigation-visualarts {
@@ -567,6 +579,7 @@ body {
 }
 #visual-artsheader #subtitlevisualarts {
   font-family: "Roboto", sans-serif;
+  font-style: italic;
   color: white;
 }
 
@@ -637,4 +650,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 18px;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
 }

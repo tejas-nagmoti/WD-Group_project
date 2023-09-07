@@ -39,6 +39,7 @@
     }
     #subtitleperformingarts{
         font-family: 'Roboto', sans-serif;
+        font-style: italic;
         color: white; 
     }
 
@@ -51,3 +52,8 @@
 .performingartslink:hover, a.performingartslink:active{
     color: lightgray;
 }    
+
+footer {
+    background-color: red;
+    text-align: center;
+}

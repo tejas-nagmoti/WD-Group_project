@@ -456,8 +456,8 @@ textarea {
   color: lightgray;
 }
 
-body {
-  background-image: url(img/philly-night.jpg);
+#homepage {
+  background-image: url("img/philly-night.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -465,6 +465,7 @@ body {
 footer {
   background-color: red;
   text-align: center;
+  padding: 20px;
 }
 
 #navigation-performingarts {
@@ -588,6 +589,7 @@ h5 {
 footer {
   background-color: red;
   text-align: center;
+  padding: 20px;
 }
 
 #navigation-visualarts {
@@ -703,4 +705,5 @@ footer {
 footer {
   background-color: red;
   text-align: center;
+  padding: 20px;
 }

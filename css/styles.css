@@ -366,3 +366,355 @@ textarea {
 /* =============
     Footer
 ============= */
+body {
+  background-image: url("img/philly-night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#navigation-homepage {
+  background-color: #4c2a85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #navigation-homepage {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #navigation-homepage ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#homepage-header {
+  background-color: red;
+  text-align: center;
+}
+#homepage-header #homepage-title {
+  font-size: 48px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+#homepage-header #subtitlehomepage {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+.homepagelink:link, a.homepagelink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.homepagelink:hover, a.homepagelink:active {
+  color: lightgray;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+.homeimage-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homeimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 20px;
+  margin: 20px;
+}
+
+#navigation-performingarts {
+  background-color: #4c2a85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #navigation-performingarts {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #navigation-performingarts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#performingarts-header {
+  background-color: red;
+  text-align: center;
+}
+#performingarts-header #performingarts-title {
+  font-size: 48px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+#performingarts-header #subtitleperformingarts {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+.performingartslink:link, a.performingartslink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.performingartslink:hover, a.performingartslink:active {
+  color: lightgray;
+}
+
+.performingarts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #006269;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.performingarts-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.performingarts-box h3 {
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+h4 {
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  text-align: center;
+}
+
+.buttonpa {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00888C;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+#navigation-visualarts {
+  background-color: #4c2a85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #navigation-visualarts {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #navigation-visualarts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#visual-artsheader {
+  background-color: red;
+  text-align: center;
+}
+#visual-artsheader #titlevisualarts {
+  font-size: 48px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+#visual-artsheader #subtitlevisualarts {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+.visualartslink:link, a.visualartslink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.visualartslink:hover, a.visualartslink:active {
+  color: lightgray;
+}
+
+.visualarts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #008264;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.visualarts-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visualarts-box h3 {
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.buttonva {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009B77;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#picturephillyarts {
+  border-radius: 25px;
+}
+
+#page-title {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  font-family: "Tilt Prism", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}

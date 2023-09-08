@@ -169,30 +169,13 @@ body {
   .item {
     flex-basis: calc(100% -20px);
   }
-  div.main_table
-	{
-		display: block;
-		margin-right: 0;
-	}
-	div.left_cell
-	{
-		display: block;
-		width: 100%;
-		margin-right: 0px;
-		min-height: 0;
-	}
-	div.right_cell
-	{
-		display: block;
-		width: 100%;
-		padding: 0px;
-	}
+  
   
 }
 
 
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 300px) and (max-width: 1024px) {
   .container1 {
       padding: 15px;
   }

@@ -1,0 +1,126 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
+    grid-gap: 20px; /* Adds spacing between grid items */
+    margin: 0p;
+    padding: 20px;
+    
+  }
+  
+  .grid-item1 {
+    background-color: #151667;
+    padding: 30px;
+    margin: 10px;
+    border: 30px;
+    
+  }
+  
+#white-text {
+  color: white;
+}
+
+@font-face {
+  font-family: 'TiltPrism';
+  src: url('https://fonts.gstatic.com/s/tiltprism/v6/MQPd-6L8LwWm9eUzzaDbd3GLhQ.ttf') format('truetype');
+}
+.custom-heading {
+  font-family: 'Tilt Prism', sans-serif;
+}
+
+.grid-footer {
+  color: black;
+  background-color: #681813;
+  padding: 20px;
+  border-top: 5px lightgrey;
+}
+
+.grid-header {
+  color: whitesmoke;
+  background-color: #681813;
+  padding: 20px;
+  border-bottom: 5px;
+ 
+}
+.background-color {
+  background-color: lightgrey;
+}
+
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #4c2a85;
+}
+
+.navbar-list li {
+  display: inline-block; 
+}
+
+
+.navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-list li a:hover {
+  background-color: lightslategray;
+}
+
+h1 {
+  color: white; 
+}
+
+@media (max-width: 600px) {
+  .navigation {
+      font-size: 14px; /* Decrease font size for smaller screens */
+      padding: 5px; /* Reduce padding for more compact display */
+  }
+}
+
+/* Media query for screens between 600px and 1024px (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navigation {
+    font-size: 16px; /* Adjust font size for tablets */
+    padding: 8px; /* Slightly increase padding */
+  }
+}
+
+@media (min-width: 1025px) {
+  .navigation {
+      font-size: 18px; /* Increase font size for larger screens */
+      padding: 12px; /* Increase padding for better spacing */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+      padding: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+      padding: 30px;
+  }
+}
+
+.my-link {
+  color: white;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.my-link:hover {
+  color: slategrey;
+}
+
+
+.my-link:visited {
+  color: orange;
+}

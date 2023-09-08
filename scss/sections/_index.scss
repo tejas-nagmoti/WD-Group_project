@@ -30,6 +30,8 @@ body{
             align-items: center;
             width: 100%;
             padding: 10px;
+            list-style: none;
+
         }
     }
 }
@@ -37,11 +39,15 @@ body{
     background-color: red;
     text-align:  center;
 
+
+
+
     #homepage-title{
         font-size: 48px;
         font-family: 'Tilt Prism', cursive;
         color: white; 
         text-decoration: none;
+        clear:none;
     }
     #subtitlehomepage{
         font-family: 'Roboto', sans-serif;

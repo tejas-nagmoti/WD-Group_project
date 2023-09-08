@@ -2,33 +2,3 @@
     Navigation
 ============= */
 
-nav{
-
-        background-color: #4c2a85; 
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-    
-        font-family: 'Tilt Prism', cursive;
-        color: white;
-        text-decoration: none;
-    
-        display: none;
-    
-        @include lg{
-            display: block;
-            width: 100%;
-    
-        }
-    
-        ul{
-            @include lg{
-                display:flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 100%;
-                padding: 10px;
-            }
-        }
-    
-}

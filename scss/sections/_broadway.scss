@@ -27,7 +27,7 @@ a {
   border: 1px solid #ccc;
 }
 .item {
-  flex-basis: calc(50% - 10px)
+  flex-basis: calc(50% - 10px);
    padding: 10px;
    box-sizing: border-box;
    border: 1px solid #ccc;
@@ -99,7 +99,6 @@ body {
   margin: 10px;
 }
 
-
 .navbar-list {
   list-style-type: none;
   margin: 0;
@@ -167,7 +166,7 @@ body {
     padding: 10px;
   }
   .item {
-    flex-basis: calc(100% -20px);
+    flex-basis: calc(100% - 20px);
   }
   
   
@@ -193,5 +192,35 @@ body {
   box-sizing: border-box;
 }
 
+#navigation-homepage {
 
+  background-color: #4c2a85; 
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  font-family: 'Tilt Prism', cursive;
+  color: white;
+  text-decoration: none;
+
+  display: none;
+
+  @include lg{
+      display: block;
+      width: 100%;
+
+  }
+
+  ul{
+      @include lg{
+          display:flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+          padding: 10px;
+          list-style: none;
+
+      }
+  }
+}
 

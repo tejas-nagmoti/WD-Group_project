@@ -331,6 +331,10 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: lightgrey;
+}
+
 /* =============
     Typography
 ============= */
@@ -1455,6 +1459,10 @@ body {
   font-family: "Tilt Prism", sans-serif;
 }
 
+.white-text {
+  color: white;
+}
+
 .grid-footer {
   color: whitesmoke;
   background-color: #681813;
@@ -1602,8 +1610,10 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-  grid-template-columns: repeat(1, 1fr); /* Creates 2 columns with equal width */
-  grid-gap: 20px; /* Adds spacing between grid items */
+  grid-template-columns: repeat(1, 1fr);
+  /* Creates 2 columns with equal width */
+  grid-gap: 20px;
+  /* Adds spacing between grid items */
   margin: 0p;
   padding: 20px;
 }
@@ -1613,6 +1623,18 @@ body {
   padding: 30px;
   margin: 10px;
   border: 30px;
+}
+
+body {
+  color: white;
+}
+
+.white-text {
+  color: white;
+}
+
+h2 {
+  color: white;
 }
 
 #white-text {
@@ -1654,10 +1676,6 @@ body {
 
 .navbar-list li a:hover {
   background-color: lightslategray;
-}
-
-h1 {
-  color: white;
 }
 
 /* Media query for screens between 600px and 1024px (tablets) */
@@ -1763,12 +1781,14 @@ h1 {
   }
 }
 
-.homepagelink:link, a.homepagelink:visited {
+.homepagelink:link,
+a.homepagelink:visited {
   color: white;
   text-decoration: none;
 }
 
-.homepagelink:hover, a.homepagelink:active {
+.homepagelink:hover,
+a.homepagelink:active {
   color: lightgray;
 }
 
@@ -1807,13 +1827,8 @@ h1 {
   margin: right;
 }
 
-.half-column {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-}
-
 body {
+  color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1879,7 +1894,7 @@ body {
   background-color: lightgrey;
 }
 
-#white-text {
+.text {
   color: white;
 }
 

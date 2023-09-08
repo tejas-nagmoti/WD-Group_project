@@ -364,6 +364,43 @@ textarea {
 /* =============
     Navigation
 ============= */
+#navigation-homepage {
+  background-color: #4c2a85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #navigation-homepage {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #navigation-homepage ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+  }
+}
+
 /* =============
     Header
 ============= */
@@ -374,6 +411,13 @@ body {
   background-image: url("img/philly-night.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+header {
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #navigation-homepage {

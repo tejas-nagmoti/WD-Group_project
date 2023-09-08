@@ -1,0 +1,112 @@
+#navigation-performingarts{
+
+    background-color: #4c2a85; 
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    font-family: 'Tilt Prism', cursive;
+    color: white;
+    text-decoration: none;
+
+    display: none;
+
+    @include lg{
+        display: block;
+        width: 100%;
+
+    }
+
+    ul{
+        @include lg{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
+#performingarts-header{
+    background-color: red;
+    text-align:  center;
+
+    #performingarts-title{
+        font-size: 48px;
+        font-family: 'Tilt Prism', cursive;
+        color: white; 
+        text-decoration: none;
+    }
+    #subtitleperformingarts{
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        color: white; 
+    }
+
+}
+
+.performingartslink:link, a.performingartslink:visited{
+    color: white;
+    text-decoration: none;
+}
+.performingartslink:hover, a.performingartslink:active{
+    color: lightgray;
+}    
+
+.performingarts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006269;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+
+}
+.performingarts-box img{
+    max-width: 100%;
+    height:auto;
+}
+
+.performingarts-box h3{
+    font-family: 'Tilt Prism', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+}
+h4{
+    font-family: 'Tilt Prism', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+}
+
+h5 {
+
+        font-family: 'Tilt Prism', cursive;
+        color: black;
+        text-decoration: none;
+        font-size: 22px;;
+        text-align: center;
+
+}
+
+.buttonpa{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00888C;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+
+footer {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}

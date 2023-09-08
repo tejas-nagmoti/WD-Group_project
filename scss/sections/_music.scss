@@ -22,11 +22,10 @@
   margin: right;
 }
 
-.half-column {
-  flex: 50%;
-}
+
 
 body {
+  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -88,7 +87,7 @@ body {
   background-color: lightgrey;
 }
 
-#white-text {
+.text {
   color: white;
 }
 

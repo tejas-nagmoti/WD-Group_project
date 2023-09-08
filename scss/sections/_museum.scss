@@ -42,14 +42,14 @@ h2 {
 
 .grid-footer {
   color: black;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-bottom: 5px;
 
@@ -209,4 +209,9 @@ a.homepagelink:visited {
 .homepagelink:hover,
 a.homepagelink:active {
   color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

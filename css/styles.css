@@ -1375,6 +1375,13 @@ h1 {
     display: none;
   }
 }
+#performingarts-title {
+  font-size: 48px;
+  font-family: "Tilt Prism", cursive;
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   text-align: center;
   width: 100%;
@@ -1389,6 +1396,7 @@ h1 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container1 {
@@ -1465,14 +1473,14 @@ body {
 
 .grid-footer {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-bottom: 5px;
 }
@@ -1651,14 +1659,14 @@ h2 {
 
 .grid-footer {
   color: black;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-bottom: 5px;
 }
@@ -1792,6 +1800,11 @@ a.homepagelink:active {
   color: lightgray;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1825,6 +1838,11 @@ a.homepagelink:active {
   margin-bottom: auto;
   margin-left: auto;
   margin: right;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -1878,14 +1896,14 @@ body {
 
 .grid-footer {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-top: 5px lightgrey;
 }
 
 .grid-header {
   color: whitesmoke;
-  background-color: #681813;
+  background-color: red;
   padding: 20px;
   border-bottom: 5px;
 }

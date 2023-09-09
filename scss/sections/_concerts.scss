@@ -40,26 +40,26 @@ h1{
 }
 
 
-/* Navbar styles */
-.navbar {
-    background-color: #492d79;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for navbar */
-}
+// /* Navbar styles */
+// .navbar {
+//     background-color: #492d79;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 50px;
+//     font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for navbar */
+// }
 
-.navbar a {
-    margin: 0 20px;
-    color: white;
-    text-decoration: none;
-}
+// .navbar a {
+//     margin: 0 20px;
+//     color: white;
+//     text-decoration: none;
+// }
 
-/* Mobile navigation styles */
-.mobile-navbar {
-    display: none; /* Initially hide mobile navbar */
-}
+// /* Mobile navigation styles */
+// .mobile-navbar {
+//     display: none; /* Initially hide mobile navbar */
+// }
 
 /* Show mobile navbar and hide burger icon in mobile view */
 @media (max-width: 768px) {
@@ -78,19 +78,19 @@ h1{
     }
 }
 
-.mobile-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    text-align: center;
-    width: 100%;
-    transition: background-color 0.3s;
-}
+// .mobile-menu a {
+//     color: white;
+//     text-decoration: none;
+//     padding: 10px 20px;
+//     text-align: center;
+//     width: 100%;
+//     transition: background-color 0.3s;
+// }
 
-/* Hover effect for mobile menu links */
-.mobile-menu a:hover {
-    background-color: #4c2a85;
-}
+// /* Hover effect for mobile menu links */
+// .mobile-menu a:hover {
+//     background-color: #4c2a85;
+// }
 
 /* Page content styles */
 .theaters-container {
@@ -114,19 +114,19 @@ h1{
     font-family: 'Tilt Prism', sans-serif; /* Tilt Prism font for footer */
 }
 
-/* Burger icon styles */
-.burger-icon {
-    cursor: pointer;
-    display: flex; /* Display burger icon in desktop view */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
+// /* Burger icon styles */
+// .burger-icon {
+//     cursor: pointer;
+//     display: flex; /* Display burger icon in desktop view */
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 30px;
+//     height: 20px;
+//     background-color: transparent;
+//     border: none;
+//     padding: 0;
+//     margin: 0;
+// }
 
 .bar {
     width: 100%;

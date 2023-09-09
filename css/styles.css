@@ -2034,3 +2034,89 @@ body {
     padding: 10px;
   }
 }
+/* BURGER */
+#menu_toggle {
+  opacity: 0;
+}
+#menu_toggle:checked + .menu_button > span {
+  transform: rotate(45deg);
+}
+#menu_toggle:checked + .menu_button > span::before {
+  /* changes where the 2nd line of the menu goes */
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle:checked + .menu_button > span::after {
+  /* moves the bottom line of burger to weirdly to the left and below */
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle:checked ~ .menu_box {
+  left: 0 !important;
+}
+.menu_button {
+  position: absolute;
+  top: 125px;
+  /* using right: #px positions button on RHS, left: #px would make it LHS */
+  left: 35px; 
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu_button > span,
+/* adding span::before when span::after was filled did nothing */
+.menu_button > span::before,
+.menu_button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition-duration: 0.25s; 
+}
+.menu_button > span::before {
+  /* adding content here would add text in middle */
+  content: ''; 
+  /* moved the top line of the burger to off screen (from top) */
+  top: -8px; 
+}
+.menu_button > span::after {
+  /* adding text to content would put word below the burger */
+  content: '';
+  /* increasing padding increases the side of the last line of burger menu */
+  /* moving the top position moves the bottom line down further */
+  top: 8px;
+}
+.menu_box {
+  /* change dispaly to flex makes the text appear horizontal across the top of the page; background still there */
+  display: block;
+  position: fixed;
+  /* where the top of the white sidebar starts */
+  top: 0; 
+  right: 100%;
+  /* left: -100%; where the popup side bar comes from; 100% => flies in from the RHS */
+  /* width of the white background behind the popup sidebar */
+  width: 200px; 
+  height: 100%;
+  /* margin = how far away from the side of the page the pop up side bar is */
+  margin: 0;
+  /* padding = how far down from the top of page the text actually starts */
+  padding: 150px 0;
+  list-style: none;
+  background-color: #FEFEFE;
+  box-shadow: 2px 2px 6px ;
+  transition-duration: 0.25s;
+  justify-content: space-between;
+}
+.menu_item {
+  display: block;
+  /* padding is how far between lines */
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}

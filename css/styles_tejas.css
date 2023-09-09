@@ -415,7 +415,7 @@ h1 {
 }
 
 /* Navbar styles */
-.navbar {
+/* .navbar {
   background-color: #492d79;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,18 +428,8 @@ h1 {
           align-items: center;
   height: 50px;
   font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for navbar */
-}
+} */
 
-.navbar a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Mobile navigation styles */
-.mobile-navbar {
-  display: none; /* Initially hide mobile navbar */
-}
 
 /* Show mobile navbar and hide burger icon in mobile view */
 @media (max-width: 768px) {
@@ -501,7 +491,7 @@ h1 {
 
 /* Footer styles */
 .footer {
-  background-color: #681813; /* Updated footer color */
+  background-color: red; /* Updated footer color */
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -586,7 +576,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: #e53b2f;
+  background-color: red;
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,11 +611,12 @@ header {
 }
 
 h1 {
+  text-align: center;
   font-family: "Tilt Prism", sans-serif;
 }
 
 /* Navbar styles */
-.navbar {
+/* .navbar {
   background-color: #492d79;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,7 +629,7 @@ h1 {
           align-items: center;
   height: 50px;
   font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for navbar */
-}
+} */
 
 .navbar a {
   margin: 0 20px;
@@ -713,7 +704,7 @@ h1 {
 
 /* Footer styles */
 .footer {
-  background-color: #681813; /* Updated footer color */
+  background-color: red; /* Updated footer color */
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -798,7 +789,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: #e53b2f;
+  background-color: red;
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -811,6 +802,10 @@ header {
           align-items: center;
   font-family: "Tilt Prism", sans-serif;
   position: relative; /* Add this for positioning the logo */
+  a{
+    text-decoration: none;
+  }
+
 }
 
 /* Logo styles */
@@ -923,7 +918,7 @@ h1 {
 
 /* Footer styles */
 .footer {
-  background-color: #681813; /* Updated footer color */
+  background-color: red; /* Updated footer color */
   color: white;
   text-align: center;
   padding: 10px 0;

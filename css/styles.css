@@ -1226,33 +1226,6 @@ h1 {
   right: 20px; /* Adjust the right position */
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #492d79;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-  font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for navbar */
-}
-
-.navbar a {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Mobile navigation styles */
-.mobile-navbar {
-  display: none; /* Initially hide mobile navbar */
-}
-
 /* Show mobile navbar and hide burger icon in mobile view */
 @media (max-width: 768px) {
   .navbar {
@@ -1274,21 +1247,6 @@ h1 {
     background-color: #492d79;
   }
 }
-.mobile-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-
-/* Hover effect for mobile menu links */
-.mobile-menu a:hover {
-  background-color: #4c2a85;
-}
-
 /* Page content styles */
 .theaters-container {
   display: -ms-grid;
@@ -1308,27 +1266,6 @@ h1 {
   bottom: 0;
   width: 100%;
   font-family: "Tilt Prism", sans-serif; /* Tilt Prism font for footer */
-}
-
-/* Burger icon styles */
-.burger-icon {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; /* Display burger icon in desktop view */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 
 .bar {

@@ -660,6 +660,91 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .navigation {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navigation {
+    font-size: 17px;
+    padding: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .navigation {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+.two {
+  font-size: 24px;
+}
+
+.header_wrapper {
+  display: block;
+}
+
+.darkmode {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 18px;
+  position: relative;
+  width: 24px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.99s;
+  transition: 0.99s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 14px;
+  left: 2px;
+  position: absolute;
+  -webkit-transition: 0.99s;
+  transition: 0.99s;
+  width: 14px;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 8px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .performingartslink:link, a.performingartslink:visited {
   color: white;
   text-decoration: none;

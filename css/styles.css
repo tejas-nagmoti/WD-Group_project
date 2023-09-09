@@ -1641,10 +1641,6 @@ body {
   color: white;
 }
 
-h2 {
-  color: white;
-}
-
 #white-text {
   color: white;
 }
@@ -1842,12 +1838,20 @@ a {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
+}
+
+h3 {
+  text-align: left;
 }
 
 body {
   color: white;
   font-family: "Roboto", sans-serif;
+}
+
+#color {
+  color: white;
 }
 
 .page-wrapper2 {

@@ -1000,10 +1000,14 @@ Footer styles
 }
 
 
+<<<<<<< HEAD
 
 
 
 /* BURGER */
+=======
+/* Burger icon styles */
+>>>>>>> 00bda3f28f742fe8e5e6b78e257dde731d647998
 #menu_toggle {
   opacity: 0;
 }
@@ -1089,6 +1093,7 @@ Footer styles
   text-decoration: none;
   transition-duration: 0.25s;
 }
+<<<<<<< HEAD
 
 .lower_wrapper {
   background-color: #cc0000;
@@ -1098,3 +1103,5 @@ Footer styles
   height: 20px;
   font-family: 'Roboto', sans-serif;
 }
+=======
+>>>>>>> 00bda3f28f742fe8e5e6b78e257dde731d647998

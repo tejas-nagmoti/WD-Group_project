@@ -376,7 +376,7 @@ body {
 
 /* Apply the background color to both header and navbar */
 header {
-  background-color: #red;
+  background-color: red;
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;

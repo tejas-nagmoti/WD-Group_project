@@ -413,6 +413,10 @@ body {
   background-repeat: no-repeat;
 }
 
+header {
+  background-color: red;
+}
+
 footer {
   background-color: red;
   text-align: center;

@@ -113,7 +113,9 @@ p{
     justify-content: space-between;
   }
   .menu_item {
-    display: block;
+    //display: block;
+    display: flex;
+    flex-direction: column;
     /* padding is how far between lines */
     padding: 12px 24px;
     color: #333;
